@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import django_heroku
+from whitenoise import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-&n9jbbh43gsag49viyh*i2^$)t05s26+02^v3&q=d9^gh8f5wn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['todo-li-st.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','todo-li-st.herokuapp.com']
 
 
 # Application definition
